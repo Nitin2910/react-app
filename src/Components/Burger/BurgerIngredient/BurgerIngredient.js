@@ -6,31 +6,31 @@ class BurgerIngredient extends Component {
     render() { 
         console.log(this.props.type);
         let ingredient = null;
-        ingredient =<div className={BurgerIngCss.BreadBottom}>Bread Bottom</div>;
+        ingredient =<div className={BurgerIngCss.BreadBottom}></div>;
         switch (this.props.type) {
             case ('bread-bottom'):
-                ingredient = <div className={BurgerIngCss.BreadBottom}>Bread Bottom</div>;
+                ingredient = <div className={BurgerIngCss.BreadBottom}></div>;
                 break;
             case ('bread-top'):
                 ingredient = <div className={BurgerIngCss.BreadTop}>
                     <div className={BurgerIngCss.Seeds1}></div>
-                    <div className={BurgerIngCss.Seeds2}></div>Bread Top
+                    <div className={BurgerIngCss.Seeds2}></div>
                 </div>;
                 break;
             case ('meat'):
-                ingredient = <div className={BurgerIngCss.Meat}>Meat
+                ingredient = <div className={BurgerIngCss.Meat}>
                 </div>;
                 break;
             case ('cheese'):
-                ingredient = <div className={BurgerIngCss.Cheese}>Cheese
+                ingredient = <div className={BurgerIngCss.Cheese}>
                 </div>;
                 break;
             case ('salad'):
-                ingredient = <div className={BurgerIngCss.Salad}>Salad
+                ingredient = <div className={BurgerIngCss.Salad}>
                 </div>;
                 break;
             case ('bacon'):
-                ingredient = <div className={BurgerIngCss.Bacon}>Bacon
+                ingredient = <div className={BurgerIngCss.Bacon}>
                 </div>;
                 break;
             default:
